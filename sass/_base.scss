@@ -1,0 +1,40 @@
+//color-variables
+
+$color-sunflower-yellow:#FFD502;
+$color-charcoal-grey:#373D40;
+$color-pale-grey:#F5F8F9;
+$color-dark-grey:#383838;
+$color-invalid:#ff9200;
+$color-green-blue:#49c8a8;
+$color-cloudy-blue:#b1bfcd;
+$color-btn-cancel:#cad7dd;
+$color-orange:#ff9201;
+$white:white;
+
+//font
+$font-primary:'Arial-mt-std',sans-serif;
+@font-face{
+    font-family:'arialmt';
+    src:url(fonts/arial-mt-std.ttf);
+    fornt-style:normal;
+}
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+}
+
+html{
+    box-sizing:border-box;
+    
+}
+
+body{
+    background:white;
+    font-family:$font-primary;
+
+}
+

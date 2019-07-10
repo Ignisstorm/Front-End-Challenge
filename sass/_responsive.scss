@@ -1,0 +1,85 @@
+$break-large: 1024px;
+$break-small: 768px;
+
+@media screen and (max-width: $break-large) {
+.fluid--container {
+    border-radius: 0;
+    margin: 0 auto;
+    max-width: 100%;
+    box-shadow: none;
+}
+
+.fluid--container .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.avatar__content--left, .user__content--right {
+    border-radius: 0;
+}
+
+.avatar__content--left, .user__content--right{
+  padding: 45px 28px;
+}
+
+#userform {
+    margin: 45px auto 0 auto;
+}
+.avatar__content--left .avatar__content--button.leftarrow {
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.avatar__content--left .avatar__content--button.rightarrow {
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+}
+
+@media screen and (max-width: $break-small) {
+.btn--cancel, .btn--save{
+	width: 150px;
+}
+.d-sm-none {
+	display: none;
+}
+.form-group {
+.submitbuttons button {
+    margin: 0;
+}
+
+.submitbuttons {
+    padding: 0;
+    width: 50%;
+    text-align: left;
+}
+}
+.memberships {
+label {
+    max-width: 25%;
+}
+}
+}
+
+@media screen and (min-width: $break-large) {
+.fluid--container {
+    border-radius: 42.5px;
+    background-color: #ffffff;
+    margin: 66px auto;
+    -webkit-box-shadow: 1px 2px 22px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 2px 22px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 2px 22px -6px rgba(0, 0, 0, 0.75);
+}
+.avatar__content--left{
+  border-top-left-radius:42.5px;
+  border-bottom-left-radius:42.5px;
+}
+.user__content--right{
+  border-top-right-radius:42.5px;
+  border-bottom-right-radius:42.5px;
+}
+.fluid--container .avatar__content--left, .fluid--container .user__content--right{
+  padding: 163px 28px;
+}
+}

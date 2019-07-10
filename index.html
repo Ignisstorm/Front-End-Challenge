@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <title>Front-End Dev Challenge</title>
+    </head>
+    <body >
+        <div class="fluid--container col-lg-8 ml-lg-auto mr-lg-auto">
+        <div class="row">
+        <div class="avatar__content--left col-lg-4 col-sm-12 col-md-12">
+        <img class="avatar__content--avatar col-lg-8 col-md-4 col-sm-4 mr-auto ml-auto" src="assets/avatar/page-1.png">
+        <div class="avatar__content--headings">
+        <h1>Front-end challenge!</h1>
+        <br><br>
+        <h2>This is a design that you will need to code up and impress us.</h2>
+        </div>
+        <img class="avatar__content--button rightarrow" id="detail" src="assets/icons/right-3.png" >
+        </div>
+        <div class="user__content--right col-lg-8 col-sm-12 col-md-12 showform">
+        <!--Button toggle-->
+        <div id="User--profile"  class="col-lg-8 col-sm-8 col-md-8 mr-auto ml-auto"  >
+        <h1>My World Today</h1>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. <strong>View all days</strong> eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat</p>
+        </div>
+        <!--button toggle done-->        
+        <form id="userform">
+        <div class="form-group row">
+        <label for="name" class="col-sm-4 col-form-label">Name</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" id="inputName" aria-required="true" placeholder="Name">
+    </div>
+        </div>
+        <br>
+        <div class="form-group row">
+        <label for="inputGender" class="col-sm-4 col-form-label">Gender</label>
+        <div class="col-sm-6">
+        <div class="container col pr-0 pl-0">
+			<div class="radio-tile-group memberships gender col-auto pr-0 pl-0">
+					<label class="col-6 mb-0 pr-0 pl-0" for="male">
+						<input type="radio" name="gender" id="male">
+						<div class="radio-icon"></div>
+						<span>Male</span>
+					</label>
+					<label class="col-auto mb-0 pr-0 pl-0" for="female">
+						<input type="radio" name="gender" id="female">
+						<div class="radio-icon"></div>
+						<span>Female</span>
+					</label>
+			</div>
+		</div>
+        </div>
+        </div>
+        <div class="form-group row">
+        <label for="date-picker" tabindex="0" class="col-sm-4 col-form-label">Date of Birth</label>
+        <div class="col-sm-8">
+         
+      <input type="date" class="form-control" id="date-picker" aria-required="true" placeholder="01/02/1983" >
+      <!--<span class="input-group addon"><img src="assets/icons/calendar.png"></span>-->
+    </div>
+        </div>
+        <br>
+        <div class="form-group row">
+        <label for="email" class="col-sm-4 col-form-label">Email</label>
+        
+        <div class="col-sm-8">
+        <input type="email" class="form-control" id="email" aria-required="true" data-rule="email" placeholder="kendall@email.com" >
+        <div class="error" id="emailErrorMessage" aria-hidden="true" role="alert">
+        <span>Invalid email address!</span>
+         </div>
+        </div>
+        </div>
+        <br>
+        <div class="form-group row">
+        <label for="number" class="col-sm-4 col-form-label">Mobile</label>
+        <div class="col-sm-8">
+        <input type="number" class="form-control" id="mobile" aria-required="true" placeholder="+91 98763 4320" >
+        </div>
+        </div>
+        <br>
+        <div class="form-group row">
+        <label for="number" class="col-sm-4 col-form-label">Customer ID</label>
+        <div class="col-sm-8">
+        <input type="number" class="form-control" id="cusId" aria-required="true" placeholder="576802-ERD0348 45" >
+        </div>
+        </div>
+        <br>
+        <div class="form-group row">
+        <label for="number" class="col-sm-4 col-form-label">Membership</label>
+        <div class="col-sm-8">		
+		<div class="container col pr-0 pl-0">
+			<div class="radio-tile-group memberships col-auto pr-0 pl-0">
+					<label class="col-4 mb-0 pr-0 pl-0" for="classic">
+						<input type="radio" name="membership" id="classic" checked="">
+						<div class="radio-icon radio-checked"></div>
+						<span>Classic</span>
+					</label>
+					<label class="col-4 mb-0 pr-0 pl-0" for="silver">
+						<input type="radio" name="membership" id="silver">
+						<div class="radio-icon"></div>
+						<span>Silver</span>
+					</label>
+					<label class="col-auto mb-0 pr-0 pl-0" for="gold">
+						<input type="radio" name="membership" id="gold">
+						<div class="radio-icon"></div>
+						<span>Gold</span>
+					</label>	
+			</div>
+		</div>
+        </div>
+        </div>
+        <br>
+        <div class="form-group row">
+        <div class="col-sm-4 d-sm-none d-md-block pr-0 pl-0 submitbuttons">      
+        
+        </div><div class="col-sm-4 pr-0 pl-0 submitbuttons">
+        
+        <button class="btn--cancel" type="reset" value="Reset" onclick="clearText()">Cancel</button>
+        </div>
+        <div class="col-sm-4 pr-0 pl-0 submitbuttons">
+        <button class="btn--save">Save</button>
+        </div>
+        </div>
+        </div>
+        </form>
+        
+        </div>
+        </div>
+        </div>
+        <!--javascript-->
+       
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <script src="js/main.js"></script>
+    </body>
+</html>

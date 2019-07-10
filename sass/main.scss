@@ -1,0 +1,40 @@
+@import "base";
+@import "buttons";
+@import "typography";
+@import "form";
+@import "responsive";
+
+.avatar__content--left{
+  background:$color-sunflower-yellow;
+  text-align:center;
+}
+.user__content--right.showform {
+    padding-top: 0;
+}
+.avatar__content--avatar{
+  margin-bottom:100px; 
+}
+.avatar__content--button.leftarrow {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.user__content--right.showform #userform, .user__content--right.showbio #User--profile {
+  display: block;
+}
+.user__content--right.showbio #userform, .user__content--right.showform #User--profile {
+  display: none;
+}
+.user__content--right.showbio {
+  background: $color-orange;
+  justify-content:center;
+  color: $color-dark-grey;
+  z-index:10;
+  &__p{   
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.53;
+  letter-spacing: normal;  
+}
+}

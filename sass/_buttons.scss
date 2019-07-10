@@ -1,0 +1,68 @@
+.btn{
+  width: 82.2px;
+  height: 17.5px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  border-radius:5.3px;
+}
+
+.btn--cancel{
+  border:none;
+  border-radius: 5.3px;
+  width:158.7px;
+  height:53px;
+  float:right;
+  background-color:$color-btn-cancel;
+  color:$color-charcoal-grey;
+  &:hover{
+            background:lighten($color-charcoal-grey,50%);
+            transition:250ms ease-in;
+        }
+        
+}
+.btn--save{
+  margin-right: 15px;
+  border: none;
+  border-radius: 5.3px;
+  float: right;
+  width: 158.7px;
+  height: 53px;
+  color: #ffffff;
+  background-color:$color-green-blue;
+  &:hover{
+            background:darken($color-green-blue,10%);
+            transition:250ms ease-in;
+            
+        }
+}
+.avatar__content--button{
+    width:64px;
+    height:64px;
+    boder-radius:50%;
+    margin-top:100px;
+    
+}
+
+.oval{
+  border-radius:50px;
+   width: 52.9px;
+  height: 53px;
+  background-color: $color-pale-grey; 
+  
+}
+.oval__card--btn{
+  border:none;
+    border-radius:50px;
+   width: 52.9px;
+  height: 53px;
+  background-color: $color-pale-grey !important; 
+
+}
+
+

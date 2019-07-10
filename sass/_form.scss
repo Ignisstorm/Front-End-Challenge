@@ -1,0 +1,164 @@
+
+
+
+
+
+label{    
+   font-size: 14.8px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: $color-charcoal-grey; 
+}
+
+strong{
+    text-decoration:underline;
+}
+.gender--label{
+    padding-left:8px;
+    color:$color-cloudy-blue;
+}
+#date-picker,#inputName,#email,#mobile,#cusId{
+    color:$color-cloudy-blue !important;
+
+}
+
+form{
+    margin-top:45px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem $color-orange;
+}
+
+.error {
+  display: none;
+  color: $color-orange;
+  font-size: 12px;
+   text-align: left;
+  span {
+    margin: 0;
+  }
+}
+
+.form-group {
+input::placeholder {
+    color: #b1bfcd;
+}
+input {
+    background-color: #f4f7f8;
+    border-color: transparent;
+}
+input:focus {
+	border-color: #ced4da;
+}
+
+}
+
+.form-group.emailerror input {
+    color: $color-orange;
+	border: 1px solid $color-orange;
+}
+.form-group.emailerror label {
+    color: $color-orange;
+}
+
+.form-group.emailerror #emailErrorMessage {
+	display: initial;
+    position: absolute;
+    right: 15px;
+}
+
+input[aria-invalid='false'] {
+  border: 1px solid $color-pale-grey;
+}
+input[aria-invalid='true'] {
+  border: 1px solid $color-orange;
+}
+
+input[type=date]:after {
+    content: "";
+    position: absolute;
+    right: 24px;
+    width: 20px;
+    height: 20px;
+    background-image: url(icons/calendar@2x.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.memberships {
+input[type=radio] ~ .radio-icon {
+    height: 48px;
+    width: 48px;
+    background: white;
+    display: inline-block;
+    position: relative;
+    border-radius: 50%;
+	transition: 250ms;
+	box-shadow: 0 0 0 2px #fff;
+}
+
+input[type=radio] {
+display: none;
+}
+
+input[type="radio"] ~ .radio-icon:before {
+    content: "";
+    background-image: url(icons/grey-card@2x.png);
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    border-radius: 50%;
+    background-position: center center;
+    background-size: 32px;
+    background-repeat: no-repeat;
+	background-color: #f4f7f8;
+	transition: 250ms;
+}
+
+input[type=radio] ~ .radio-icon:hover {
+    box-shadow: 0 0 0 2px #a8b7c6;
+}
+
+input[type="radio"]:checked ~ .radio-icon:before {
+	background-image: url(icons/white-card@2x.png);
+    background-color: #a8b7c6;
+	box-shadow: 0 0 0 2px #fff;
+}
+span {
+    line-height: 48px;
+    display: inline-block;
+    vertical-align: top;
+}
+}
+
+.memberships.gender {
+input[type="radio"]#female ~ .radio-icon:before {
+	background-image: url(icons/female-icon@2x.png);
+}
+input[type="radio"]#male ~ .radio-icon:before {
+	background-image: url(icons/male-icon@2x.png);
+}
+input[type="radio"]#male:checked ~ .radio-icon:before {
+	background-image: url(icons/white-male-icon@2x.png);
+}
+input[type="radio"]#female:checked ~ .radio-icon:before {
+	background-image: url(icons/white-female-icon@2x.png);
+}
+}
+
+#userform .form-control:focus {
+	box-shadow: none;
+}
+
+
+
+
+
+
